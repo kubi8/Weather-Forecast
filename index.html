@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <h1 class="title">Weather forecast</h1>
+        <header class="header">
+            <form class="header-form" id="form">
+                <label for="place" class="label-search">
+                    <input type="text" id="place" class="input-search" autocomplete="off" placeholder="search a place">
+                    <input type="submit" value="Go" class="submit-search" id="go">
+                </label>
+            </form>
+        <h2 class="showing-place" id="show-place">search place</h2>
+        </header>
+        <main class="main">
+            <section class="first">
+                <div class="icon-container" id="weather-icon">
+                    <img src="img/10d.png" alt="icon weather">
+                </div>
+                <h5 class="date" id="date">Monday, 30-03-2020</h5>
+                <div class="temperature">
+                    <h3 class="temperature-degree" id="degree" glose="click to change scale">12 </h3>
+                    <span class="temp-scale" id="scale">C</span>
+                </div>
+                <div class="description">
+                    <p class="description-back" id="conditions">overcast clouds</p>
+                </div>
+            </section>
+            <section class="second">
+                <section class="second-description">
+                    <h6 class="temp-min-max-desc" id="">Temp min max</h6>
+                    <h6 class="temp-feels-desc" id="">Feels like</h6>
+                    <h6 class="pressure-desc" id="">Pressure</h6>
+                    <h6 class="humidity-desc" id="">Humidity</h6>
+                    <h6 class="wind-speed-desc" id="">Wind speed</h6>
+                    <h6 class="wind-direction-desc" id="">Wind direction</h6>
+                    <h6 class="clouds-cover-desc" id="">Clouds cover</h6>
+                    <h6 class="sunrise-desc" id="">Sunrise</h6>
+                    <h6 class="sunset-desc" id="">Sunset</h6>
+                </section>
+                <section class="second-result">
+                    <h6 class="temp-min-max-res" id="min-res"> 16 </h6><span class="temp-span" id="min-scale"> C</span>
+                    <h6 class="temp-min-max-res" id="max-res"> 18 </h6><span class="temp-span" id="max-scale"> C</span>
+                    <h6 class="temp-feels-res" id="feels">20<span class="temp-span" id="like-scale"> C</span></h6>
+                    <h6 class="pressure-res" id="pressure">1024</h6>
+                    <h6 class="humidity-res" id="humidity">60 <span class="percent">%</span></h6>
+                    <h6 class="wind-speed-res" id="wind">17<span class="wind-span" id="unit"> m/s</span></h6>
+                    <h6 class="wind-direction-res" id="wind-deg">north</h6>
+                    <h6 class="clouds-cover-res" id="cover">very cloudy</h6>
+                    <h6 class="sunrise-res" id="sunrise">05:28</h6>
+                    <h6 class="sunset-res" id="sunset">20:46</h6>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            weather forecast 2020 kubiakjarek@outlook.com
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
